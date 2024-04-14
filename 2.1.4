@@ -1,0 +1,24 @@
+import turtle
+
+# Create a new turtle screen and set its background color
+screen = turtle.Screen()
+screen.bgcolor("white")
+
+# Create a new turtle named "tracy"
+tracy = turtle.Turtle()
+
+# Function to draw a circle and move forward
+def draw_circle_and_move(turtle, radius, distance):
+    turtle.circle(radius)
+    turtle.penup()
+    turtle.forward(distance)
+    turtle.pendown()
+
+# Draw the slinky
+for i in range(5):
+    circle(35)
+    forward(40)
+
+# Hide the turtle and close the turtle graphics window
+tracy.hideturtle()
+turtle.done()
